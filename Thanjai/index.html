@@ -1,0 +1,2797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Thanjavur property real estate plot house apartment flat commercial industrial buy sale sell promoter construction builder new old buildings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Damion&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <style>
+        :root {
+            --primary-red: #d8232a;
+            --text-dark: #2d2d2d;
+            --text-light: #888888;
+            --bg-gray: #f8f9fa;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-gray);
+        }
+
+        /* --- Hero Section --- */
+    .hero-section {
+    position: relative;
+    min-height: 60px; 
+    height: auto;
+    padding: 5px 0; 
+    width: 100%;
+      background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=2070') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+        @media (max-width: 768px) {
+    .hero-section::before {
+        background: rgba(0, 0, 0, 0.3); /* light overlay */
+    }
+}
+
+        .container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1100px;
+            padding: 20px;
+        }
+
+        /* --- Navigation Tabs --- */
+        .category-tabs {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .category-tabs a {
+            position: relative;
+            padding: 10px 5px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .category-tabs a:hover { color: var(--primary-red); }
+        .category-tabs a.is-selected { color: #ffffff; }
+
+        .category-tabs a.is-selected::after {
+            content: '';
+            position: absolute;
+            bottom: -5px; left: 0; width: 100%; height: 4px;
+            background: var(--primary-red);
+            border-radius: 10px;
+        }
+
+        /* --- Search Panel --- */
+        .search-panel {
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            border-radius: 100px;
+            padding: 8px 12px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+            width: 100%;
+            border: 1px solid #efefef;
+            box-sizing: border-box;
+        }
+
+        .filter-node {
+            position: relative; 
+            flex: 1;
+            padding: 12px 20px;
+            border-right: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+            border-radius: 50px;
+        }
+
+        .filter-node:hover { background: #fcfcfc; }
+        .filter-node:last-of-type { border-right: none; }
+
+        .node-trigger { display: flex; align-items: center; gap: 12px; }
+        .glyph-highlight { color: var(--primary-red); font-size: 24px; }
+
+        .meta-label small {
+            display: block;
+            color: var(--text-light);
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 2px;
+        }
+
+        .meta-label b {
+            display: block;
+            color: var(--text-dark);
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        /* --- Search Button --- */
+        .action-trigger {
+            background: var(--primary-red);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 50px;
+            display: flex; align-items: center; gap: 8px;
+            font-size: 16px; font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(216, 35, 42, 0.2);
+            margin-left: 10px;
+        }
+
+        .action-trigger:hover {
+            background: #b51d23;
+            transform: scale(1.02);
+        }
+
+        /* --- Dropdowns --- */
+        .overlay-panel {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            top: 110%; left: 0;
+            background: white;
+            min-width: 280px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            padding: 24px;
+            z-index: 1000;
+            border: 1px solid #eee;
+            transform: translateY(10px);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+        }
+
+        .filter-node:hover .overlay-panel {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .field-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            margin-top: 8px;
+            box-sizing: border-box;
+            font-family: inherit;
+            color: var(--text-dark);
+            background: #fff;
+        }
+
+        .dropdown-title {
+            margin: 0 0 12px 0;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .range-label {
+            display: block;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section { padding: 40px 0; }
+            .search-panel { flex-direction: column; border-radius: 20px; padding: 15px; }
+            .filter-node { width: 100%; border-right: none; border-bottom: 1px solid #eee; }
+            .action-trigger { width: 100%; margin: 10px 0 0 0; justify-content: center; }
+        }
+    </style>
+
+ <script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-tertiary": "#ffffff",
+          "on-tertiary-fixed": "#1e1b18",
+          "tertiary": "#635d5a",
+
+          "primary": "#b42628",
+          "primary-fixed": "#ffdad6",
+          "primary-fixed-dim": "#ffb3ad",
+          "primary-container": "#ff978f",
+
+          "secondary": "#865300",
+          "secondary-fixed": "#ffddb9",
+          "secondary-fixed-dim": "#ffb963",
+          "secondary-container": "#ffa522",
+
+          "tertiary-container": "#bab2ae",
+          "tertiary-fixed": "#e9e1dc",
+          "tertiary-fixed-dim": "#cdc5c0",
+
+          "background": "#fff8f5",
+          "surface": "#fff8f5",
+          "surface-dim": "#e1d8d4",
+          "surface-bright": "#fff8f5",
+
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#fbf2ed",
+          "surface-container": "#f5ece7",
+          "surface-container-high": "#efe6e2",
+          "surface-container-highest": "#e9e1dc",
+
+          "surface-variant": "#e9e1dc",
+          "surface-tint": "#b42628",
+
+          "inverse-surface": "#34302c",
+          "inverse-on-surface": "#f8efea",
+          "inverse-primary": "#ffb3ad",
+
+          "outline": "#867462",
+          "outline-variant": "#d9c3ae",
+
+          "error": "#ba1a1a",
+          "error-container": "#ffdad6",
+
+          "on-primary": "#ffffff",
+          "on-primary-container": "#900513",
+          "on-primary-fixed": "#410003",
+          "on-primary-fixed-variant": "#910614",
+
+          "on-secondary": "#ffffff",
+          "on-secondary-container": "#694000",
+          "on-secondary-fixed": "#2b1700",
+          "on-secondary-fixed-variant": "#663e00",
+
+          "on-tertiary-container": "#494541",
+          "on-tertiary-fixed-variant": "#4b4642",
+
+          "on-surface": "#1e1b18",
+          "on-surface-variant": "#534434",
+          "on-background": "#1e1b18",
+
+          "on-error": "#ffffff",
+          "on-error-container": "#93000a"
+        },
+
+        borderRadius: {
+          DEFAULT: "0.125rem",
+          lg: "0.25rem",
+          xl: "0.5rem",
+          full: "9999px"
+        },
+
+        fontFamily: {
+          headline: ["Manrope"],
+          body: ["Inter"],
+          label: ["Inter"]
+        }
+      }
+    }
+  }
+</script>
+
+  <style>
+
+.budget-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.budget-col .col-label{
+  font-size:11px;font-weight:700;color:#888;
+  text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;
+}.node-trigger{display:flex;align-items:center;gap:12px;}
+.glyph{color:#d8232a;font-size:24px}
+
+.meta-label small{
+  display:block;color:#888;
+  font-size:10px;text-transform:uppercase;letter-spacing:.8px;margin-bottom:2px;
+}
+.meta-label b{
+  display:block;color:#2d2d2d;
+  font-size:14px;white-space:nowrap;font-weight:500;
+}
+
+.action-trigger{
+  background:#d8232a;color:#fff;border:none;
+  padding:16px 28px;border-radius:50px;
+  display:flex;align-items:center;gap:8px;
+  font-size:15px;font-weight:700;cursor:pointer;
+  transition:all .25s;white-space:nowrap;
+  margin-left:8px;flex-shrink:0;
+}
+.action-trigger:hover{background:#b51d23;transform:scale(1.02)}
+
+/* Dropdown */
+.overlay-panel{
+  display:none;
+  position:absolute;top:calc(100% + 14px);left:0;
+  background:#fff;min-width:260px;
+  border-radius:20px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.15);
+  padding:20px;z-index:1000;
+  border:1px solid #eee;
+  animation:fadeDown .2s ease-out;
+}
+.overlay-panel.open{display:block}
+
+@keyframes fadeDown{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.panel-title{font-size:12px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.6px;margin-bottom:12px}
+
+.scroll-list{max-height:200px;overflow-y:auto}
+.scroll-list::-webkit-scrollbar{width:3px}
+.scroll-list::-webkit-scrollbar-thumb{background:#ddd;border-radius:10px}
+
+.item-row{
+  padding:10px 12px;font-size:14px;border-radius:8px;cursor:pointer;
+  transition:background .15s,color .15s;
+}
+.item-row:hover{background:#fff0f0;color:#d8232a}
+
+.field-input{
+  width:100%;padding:10px 12px;
+  border:1px solid #e0e0e0;border-radius:10px;
+  font-family:inherit;font-size:13px;
+  margin-bottom:10px;outline:none;
+  color:#2d2d2d;background:#fff;
+}
+.field-input:focus{border-color:#d8232a}
+
+    /* ===== NAV BUTTONS ===== */
+    .btn-premium {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 24px;
+  border-radius: 40px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(105deg, #b42628, #e64b2e, #ff6a4b);
+  background-size: 200% auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(180, 38, 40, 0.25);
+  font-size: 0.9rem;
+}
+
+.btn-premium::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-25deg);
+  transition: 0.5s;
+}
+
+.btn-premium:hover::before {
+  left: 125%;
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(180, 38, 40, 0.35);
+}
+
+.btn-login-elegant {
+  position: relative;
+  padding: 8px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+  background: transparent;
+  color: #1e1b18;
+  border: 1.5px solid #d9c3ae;
+  transition: all 0.25s ease;
+  font-size: 0.85rem;
+  backdrop-filter: blur(2px);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-login-elegant:hover {
+  background: #86530010;
+  border-color: #865300;
+  color: #865300;
+  transform: scale(1.02);
+}
+
+    /* ===== MOBILE DRAWER ===== */
+
+.mobile-nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(30, 27, 24, 0.75);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(80%, 320px);
+  background: #fff8f5;
+  box-shadow: -12px 0 40px rgba(30, 27, 24, 0.2);
+  z-index: 1001;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem 2rem;
+  overflow-y: auto;
+}
+
+.mobile-drawer.open {
+  transform: translateX(0);
+}
+
+.drawer-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  font-weight: 600;
+  border-bottom: 1px solid #e9e1dc;
+  color: #1e1b18;
+  font-family: 'Manrope', sans-serif;
+  transition: 0.2s;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.drawer-link:hover {
+  color: #b42628;
+  padding-left: 6px;
+}
+
+body.drawer-open {
+  overflow: hidden;
+}
+
+
+/* ===== CITY DROPDOWN ===== */
+
+.nav-city-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  width: 760px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+  z-index: 50;
+  border: 1px solid #e9e1dc;
+}
+
+.nav-city-trigger:hover .nav-city-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-city-dropdown .district-search {
+  width: 100%;
+  padding: 8px 14px;
+  border: 1px solid #e9e1dc;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  outline: none;
+  margin-bottom: 1rem;
+  color: #1e1b18;
+  background: #fff8f5;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s;
+}
+
+.nav-city-dropdown .district-search:focus {
+  border-color: #b42628;
+}
+
+.nav-city-dropdown .district-group-title {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #b42628;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.nav-city-dropdown .district-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px 4px;
+}
+
+.nav-city-dropdown .district-item {
+  font-size: 0.78rem;
+  color: #534434;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-city-dropdown .district-item:hover {
+  background: #fdf0f0;
+  color: #b42628;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1280px) {
+  .nav-city-dropdown {
+    width: 560px;
+  }
+
+  .nav-city-dropdown .district-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+    /* ===== SECTION HEADERS ===== */
+
+.section-header {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.section-header h1 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 800;
+  font-family: 'Manrope', sans-serif;
+  background: linear-gradient(135deg, #1e1b18, #b42628);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-header p {
+  font-size: 0.85rem;
+  color: #534434;
+  margin-top: 0.5rem;
+}
+
+.section-pad {
+  padding: 3rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding: 3.5rem 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-pad {
+    padding: 4rem 3rem;
+  }
+}
+
+.view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #b42628;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(180, 38, 40, 0.3);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: gap 0.2s;
+}
+
+.view-all-link:hover {
+  gap: 14px;
+}
+
+
+/* ===== HERO SECTION ===== */
+
+.hero-section {
+  position: relative;
+  /*min-height: 50vh;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    position: relative;
+  }
+
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.674); /* light black */
+    z-index: 1;
+  }
+
+  /* content மேல வரணும் */
+  .hero-section > * {
+    position: relative;
+    z-index: 2;
+  }
+
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.hero-subtitle {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  margin-bottom: 0;
+  line-height: 1.6;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+    /* ===== HERO SLIDER ===== */
+
+.hero-slider-section {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #1a1512;
+}
+
+.hero-slider-container {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.hero-slider-item {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero-slider-item img {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-slider-next,
+.hero-slider-prev {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.hero-slider-next::after,
+.hero-slider-prev::after {
+  font-size: 18px;
+  color: #b42628;
+  font-weight: 700;
+}
+
+.hero-slider-next {
+  right: 16px;
+}
+
+.hero-slider-prev {
+  left: 16px;
+}
+
+.hero-slider-next:hover,
+.hero-slider-prev:hover {
+  background: #b42628;
+}
+
+.hero-slider-next:hover::after,
+.hero-slider-prev:hover::after {
+  color: white;
+}
+
+.hero-slider-pagination {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.hero-slider-pagination .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.6;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  transition: all 0.3s;
+}
+
+.hero-slider-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #b42628;
+  width: 24px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .hero-slider-item img {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-slider-item img {
+    max-height: 260px;
+  }
+
+  .hero-slider-next,
+  .hero-slider-prev {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slider-item img {
+    max-height: 200px;
+  }
+}
+
+    /* ===== SEARCH PANEL ===== */
+
+:root {
+  --primary-accent: #d8232a;
+  --primary-hover: #b51d22;
+  --soft-tint: #fff1f2;
+  --ui-border: #e5e7eb;
+  --base-dark: #1f2937;
+  --base-muted: #6b7280;
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 0 10px;
+}
+
+.category-tabs {
+  display: flex;
+  gap: 32px;
+  position: relative;
+}
+
+.category-tabs a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white;
+  padding: 0 4px 4px 4px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.category-tabs a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.category-tabs a.is-selected {
+  color: rgb(255, 0, 0);
+}
+
+.category-tabs a.is-selected::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.search-panel {
+    width: 100%;
+    max-width: 876px;
+    background: white;
+    border-radius: 60px; 
+    display: flex;
+    padding: 2px 10px; 
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: transform 0.3s ease;
+    gap: 0;
+    align-items: center; /* content center */
+}
+
+@media (max-width: 768px) {
+  .search-panel {
+    border-radius: 24px;
+    flex-direction: column;
+    gap: 1px;
+    padding: 0;
+  }
+}
+
+.filter-node {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 80px;
+  border-right: 1px solid #f0f0f0;
+}
+
+.filter-node:hover {
+  background: #f9fafb;
+}
+
+.filter-node:last-of-type {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  .filter-node {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 15px 12px;
+    border-radius: 0;
+  }
+
+  .filter-node:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.node-trigger {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.meta-label {
+  flex: 1;
+}
+
+.meta-label small {
+  display: block;
+  font-size: 10px;
+  color: var(--base-muted);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.meta-label b {
+  font-size: 15px;
+  color: var(--base-dark);
+}
+
+.glyph-highlight {
+  color: var(--primary-accent);
+}
+
+.action-trigger {
+  background: var(--primary-accent);
+  color: white;
+  border: none;
+  padding: 5px 39px;
+  height: 52px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  flex-shrink: 0;
+}
+
+.action-trigger:hover {
+  background: var(--primary-hover);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .action-trigger {
+    width: calc(100% - 24px);
+    justify-content: center;
+    margin: 12px;
+    height: 50px;
+  }
+}
+
+.overlay-panel {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 280px;
+  background: white;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+  border: 1px solid var(--ui-border);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.filter-node.is-open .overlay-panel {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tag-bubble {
+  background: var(--soft-tint);
+  color: var(--primary-accent);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.field-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--ui-border);
+  font-family: inherit;
+  color: var(--base-dark);
+  outline: none;
+  font-size: 14px;
+}
+
+.field-input:focus {
+  border-color: var(--primary-accent);
+}
+
+   /* ===== PROPERTY CARDS ===== */
+
+.latest-properties-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1280px) {
+  .latest-properties-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .latest-properties-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .latest-properties-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.property-card {
+  background: white;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.15);
+}
+
+.property-img-wrapper {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background-color: #f5f0eb;
+  overflow: hidden;
+}
+
+.property-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.property-card:hover .property-img-wrapper img {
+  transform: scale(1.06);
+}
+
+.property-id {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgb(255, 158, 24);
+  backdrop-filter: blur(6px);
+  color: black;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 30px;
+  letter-spacing: 0.6px;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 4px 12px rgba(216, 35, 42, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.property-price {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  background: rgba(180, 38, 40, 0.92);
+  backdrop-filter: blur(5px);
+  color: white;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.9rem;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Manrope', sans-serif;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.property-desc {
+  padding: 0.9rem 1rem 1rem;
+}
+
+.property-desc p {
+  font-size: 0.85rem;
+  color: #2c241e;
+  line-height: 1.4;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.property-desc p .material-symbols-outlined {
+  font-size: 1rem;
+  color: #b42628;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.property-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.7rem;
+  color: #867462;
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #e9e1dc;
+  font-weight: 500;
+}
+
+.property-location .material-symbols-outlined {
+  font-size: 0.9rem;
+}
+    /* ===== SWIPER CARDS ===== */
+
+.property-swiper-container {
+  margin-top: -12px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0.5rem 0 1.5rem 0;
+}
+
+.property-swiper,
+.blog-swiper {
+  width: 100%;
+  overflow: visible;
+}
+
+.property-swiper .swiper-slide,
+.blog-swiper .swiper-slide {
+  height: auto;
+}
+
+.property-card-swiper {
+  background: white;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.property-card-swiper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.15);
+}
+
+.property-card-swiper .property-img-wrapper {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background-color: #f5f0eb;
+  overflow: hidden;
+}
+
+.property-card-swiper .property-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.property-card-swiper:hover .property-img-wrapper img {
+  transform: scale(1.06);
+}
+
+.swiper-nav-custom {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+
+.swiper-btn-prev-custom,
+.swiper-btn-next-custom {
+  width: 42px;
+  height: 42px;
+  background: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid #e9e1dc;
+  color: #b42628;
+}
+
+.swiper-btn-prev-custom:hover,
+.swiper-btn-next-custom:hover {
+  background: #b42628;
+  color: white;
+  border-color: #b42628;
+  transform: scale(1.05);
+}
+   @media (max-width: 768px) {
+  .swiper-nav-custom {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+/* ===== BLOG CARDS ===== */
+
+.blog-card {
+  background: #ffffff;
+  border-radius: 20px; /* smoother modern curve */
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee; /* subtle premium border */
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== IMAGE WRAPPER ===== */
+
+.blog-img-wrapper {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background-color: #f5f0eb;
+  overflow: hidden;
+
+  /* important for top curve */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.blog-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.blog-card:hover .blog-img-wrapper img {
+  transform: scale(1.08);
+}
+
+/* ===== DATE BADGE ===== */
+
+.blog-date {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  color: #ffdad6;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 40px;
+  font-family: 'Inter', monospace;
+  letter-spacing: 0.3px;
+}
+
+/* ===== CONTENT ===== */
+
+.blog-content {
+  padding: 1rem 1rem 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  /* bottom curve smooth */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* ===== TITLE ===== */
+
+.blog-title {
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+  color: #1e1b18;
+  font-family: 'Manrope', sans-serif;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===== DESCRIPTION ===== */
+
+.blog-excerpt {
+  font-size: 0.78rem;
+  color: #534434;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===== META ===== */
+
+.blog-meta {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.72rem;
+  color: #867462;
+  border-top: 1px solid #e9e1dc;
+  padding-top: 0.7rem;
+}
+
+.blog-meta .material-symbols-outlined {
+  font-size: 0.95rem;
+  color: #b42628;
+}
+    /* ===== FAQ ===== */
+
+.faq-item {
+  border-bottom: 1px solid #e9e1dc;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  color: #1e1b18;
+  transition: color 0.2s;
+  gap: 1rem;
+}
+
+.faq-question:hover {
+  color: #b42628;
+}
+
+.faq-question span:first-child {
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  letter-spacing: -0.2px;
+  flex: 1;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+  color: #b42628;
+  flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+  color: #534434;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding-bottom: 1.25rem;
+}
+
+.faq-grid-container {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 15px 35px -12px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 640px) {
+  .faq-grid-container {
+    padding: 1rem 1.2rem;
+  }
+}
+
+   /* ===== EXPLORE LOCALITIES ===== */
+
+.explore-localities-wrapper {
+  background: linear-gradient(135deg, #fef7f2 0%, #fef0ea 100%);
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 768px) {
+  .explore-localities-wrapper {
+    padding: 2rem 1.2rem;
+    border-radius: 1.5rem;
+  }
+}
+
+.locality-card-modern {
+  background: white;
+  border-radius: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.locality-card-modern:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -12px rgba(180, 38, 40, 0.2);
+}
+
+.locality-top {
+  padding: 1.6rem 1.5rem 1rem;
+  position: relative;
+}
+
+.locality-title {
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  font-weight: 800;
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #1e1b18;
+}
+
+.locality-title a {
+  color: #bdc3c7;
+  transition: 0.2s;
+}
+
+.locality-title a:hover {
+  color: #b42628;
+}
+
+.price-range-text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #865300;
+  margin-top: 0.5rem;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.rating-modern {
+  background: #f3f0ec;
+  padding: 0.3rem 0.8rem;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.rating-modern b {
+  color: #2c241e;
+}
+
+.rating-modern b::after {
+  content: " ★";
+  color: #f5a623;
+  font-weight: 600;
+}
+
+.locality-footer-link {
+  background: #fef4ef;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  text-decoration: none;
+  transition: background 0.2s;
+  border-top: 1px solid rgba(180, 38, 40, 0.08);
+}
+
+.locality-footer-link span {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #b42628;
+}
+
+.locality-footer-link i {
+  background: #b42628;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  font-size: 0.75rem;
+}
+
+.locality-card-modern:hover .locality-footer-link i {
+  transform: translateX(5px);
+}
+
+.locality-nav-btns {
+  display: flex;
+  gap: 12px;
+}
+
+.loc-nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid #e9e1dc;
+  color: #b42628;
+}
+
+.loc-nav-btn:hover {
+  background: #b42628;
+  color: white;
+  border-color: #b42628;
+}
+   .loc-nav-btn:hover {
+  background: #b42628;
+  color: white;
+  border-color: #b42628;
+}
+   
+
+    /* ===== POST PROPERTY BANNER ===== */
+
+.post-property-banner {
+  background: #db4437;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'Nunito', sans-serif;
+  gap: 20px;
+}
+
+.post-property-banner h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.post-property-banner p {
+  margin: 15px 0 0;
+  font-size: 20px;
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+.post-property-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffc439;
+  color: #333;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.post-property-btn:hover {
+  transform: scale(1.04);
+}
+
+.post-property-badge {
+  background: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .post-property-banner {
+    padding: 30px 20px;
+  }
+
+  .post-property-banner h2 {
+    font-size: 28px;
+  }
+
+  .post-property-banner p {
+    font-size: 16px;
+  }
+
+  .post-property-btn {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+
+   /* ===== FOOTER LINKS SECTION (WHITE) ===== */
+
+.footer-links-section {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #fff;
+  color: #666;
+  padding: 30px 15px;
+  line-height: 1.8;
+}
+
+.footer-links-section .inner {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.footer-links-section .section-block {
+  margin-bottom: 25px;
+}
+
+.footer-links-section .section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.footer-links-list li {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links-list a {
+  text-decoration: none;
+  color: #777;
+  transition: 0.3s;
+}
+
+.footer-links-list a:hover {
+  color: #ff6b00;
+}
+
+.footer-links-list .sep {
+  padding: 0 8px;
+  color: #ccc;
+}
+
+.footer-desc {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.footer-desc-text {
+  font-size: 12.5px;
+  color: #888;
+  text-align: justify;
+  margin: 0;
+}
+
+   /* ===== DARK FOOTER ===== */
+
+.dark-footer {
+  background-color: #243147;
+  color: #ffffff;
+  padding: 60px 20px;
+}
+
+.dark-footer-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.dark-footer-col h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3d4a61;
+}
+
+.dark-footer-col h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 60px;
+  height: 2px;
+  background-color: #F8E81C;
+}
+
+.dark-footer-col p,
+.dark-footer-col li {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #d1d8e2;
+}
+
+.dark-footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dark-footer-col ul li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.dark-footer-col ul li a {
+  color: #d1d8e2;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dark-footer-col ul li a:hover {
+  color: #F8E81C;
+}
+
+.yellow-bold {
+  color: #F8E81C;
+  font-weight: bold;
+}
+    /* ===== COPYRIGHT BAR ===== */
+
+.copyright-bar {
+  background-color: #1d283a;
+  padding: 20px;
+  color: #9ba6b9;
+  font-size: 13px;
+}
+
+.bar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bottom-nav a {
+  color: #9ba6b9;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.bottom-nav a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .bar-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+  .section-header {
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header-left {
+  display: inline-block;
+}
+
+.header-left h1 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-left p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* RIGHT SIDE BUTTONS */
+.header-right {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.swiper-btn-prev-custom,
+.swiper-btn-next-custom {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  color: #b42628;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+
+/*post property*/
+
+.post-banner {
+  margin-top: -65px;
+  background: #d83a34; /* red background */
+  color: #fff;
+     padding: 2px 68px 23px 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left side */
+.post-banner-content h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* "free" style */
+.free-text {
+  font-family: 'Damion', cursive;
+  font-size: 50px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+/* Sub text */
+.post-banner-content p {
+  margin-top: -5px;
+  font-size: 14px;
+  color: #ffeaea;
+}
+
+/* Right side button */
+.post-banner-action {
+  margin-top: 21px;
+}
+
+/* Button */
+.post-btn {
+  background: #ff9c14; /* yellow */
+  color: #333;
+  padding: 10px 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* FREE badge inside button */
+.badge {
+  background: #eee;
+  color: #333;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/*  MOBILE - SAME AS IMAGE (LEFT ALIGN) */
+@media (max-width: 768px) {
+
+  .post-banner {
+         padding: 20px 41px;
+    flex-direction: column;
+    align-items: flex-start; /* keep LEFT */
+  }
+
+  .post-banner-content {
+    width: 100%;
+  }
+
+  .post-banner-content h2 {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .free-text {
+    display: block; /* next line */
+    font-size: 45px;
+    margin-left: 0;
+    margin-top: -5px;
+  }
+
+  .post-banner-content p {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  .post-banner-action {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .post-btn {
+    padding: 10px 15px;
+    border-radius: 30px;
+  }
+}
+
+/*  SMALL MOBILE */
+@media (max-width: 480px) {
+
+  .post-banner-content h2 {
+    font-size: 20px;
+  }
+
+  .free-text {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+/*  Mobile (default) */
+.explore-localities-wrapper {
+  padding-top: 2px;
+  padding-bottom: 68px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/*  Tablet & Desktop */
+@media (min-width: 768px) {
+  .explore-localities-wrapper {
+    padding-top: 2px;
+    padding-bottom: 68px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+
+.locality-title {
+  color: #000;
+}
+
+.locality-title a {
+  color: inherit; /* icon same color */
+}
+
+
+
+/* View All Section */
+
+.view-all-container {
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: -2px;
+}
+/* Link Style */
+
+.view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #b42628;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.view-all-link .material-symbols-outlined {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+
+.view-all-link:hover {
+  color: #8e1f21;
+}
+
+.view-all-link:hover .material-symbols-outlined {
+  transform: translateX(4px);
+}
+
+
+
+.listing-view-all {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 28px;
+}
+.listing-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #b42628;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.listing-btn .material-symbols-outlined {
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.listing-btn:hover {
+  color: #8e1f21;
+}
+
+.listing-btn:hover .material-symbols-outlined {
+  transform: translateX(4px);
+}
+
+.hero-subtitle {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.tamil-highlight {
+    display: block; 
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+    .header-right {
+        width: 100%;
+        left: 0;
+        right: 0;
+        justify-content: space-between;
+        padding: 0 10px;
+        gap: 0; /* important */
+    }
+}
+
+
+@media (max-width: 768px) {
+.hero-subtitle {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 10px 14px 118px 8px;
+        margin-bottom: -99px;
+        text-align: center;
+    }
+}
+  </style>
+</head>
+<body class="bg-background text-on-background font-body antialiased">
+
+  <!-- ========== STICKY NAV ========== -->
+  <nav class="bg-[#FFF0EB]/80 backdrop-blur-[20px] fixed top-0 left-0 w-full z-50 shadow-[0_4px_20px_rgba(30,27,24,0.06)] border-b border-outline-variant/20 transition-all duration-300">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 py-3 md:py-4 flex justify-between items-center gap-3">
+      <div class="flex items-center gap-4 lg:gap-10 min-w-0">
+        <a href="#"><img class="h-8 sm:h-9 md:h-10 w-auto object-contain flex-shrink-0" src="https://www.thanjaiproperty.com/images/1637904557ThanjaiProperty-Web-Logo.png" alt="Thanjai Property Logo"></a>
+        <div class="relative nav-city-trigger hidden lg:flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-high cursor-pointer text-on-surface font-medium text-sm hover:bg-surface-container-highest transition-colors">
+          <span class="material-symbols-outlined text-primary text-sm">location_on</span>
+          <span id="selectedCity">Thanjavur</span>
+          <span class="material-symbols-outlined text-sm">expand_more</span>
+          <div class="nav-city-dropdown">
+          <div style="position: relative; width: 100%;">
+  
+  <i class="fa-solid fa-magnifying-glass" style="
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 14px;
+    pointer-events: none;
+  "></i>
+
+  <input 
+    class="district-search" 
+    type="text" 
+    id="districtSearchInput" 
+    placeholder="Search district..." 
+    oninput="filterDistricts(this.value)" 
+    onclick="event.stopPropagation()"
+    style="
+      width: 100%;
+      padding: 10px 10px 10px 32px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    "
+  >
+
+</div>
+  
+
+            <div class="district-group-title">Tamil Nadu Districts</div>
+            <div class="district-grid" id="districtGrid"></div>
+          </div>
+        </div>
+        <div class="hidden xl:flex gap-5 font-headline text-sm font-medium tracking-tight">
+          <a class="flex items-center gap-1.5 text-on-surface/80 hover:text-primary transition-all duration-200" href="#"><span class="material-symbols-outlined text-primary text-base">home</span> Buy Property</a>
+          <a class="flex items-center gap-1.5 text-on-surface/80 hover:text-primary transition-all duration-200" href="#"><span class="material-symbols-outlined text-primary text-base">edit_note</span> Post Needs</a>
+          <a class="flex items-center gap-1.5 text-on-surface/80 hover:text-primary transition-all duration-200" href="#"><span class="material-symbols-outlined text-primary text-base">groups</span> Agents</a>
+          <a class="flex items-center gap-1.5 text-on-surface/80 hover:text-primary transition-all duration-200" href="#"><span class="material-symbols-outlined text-primary text-base">apartment</span> Builders</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+        <a class="btn-login-elegant hidden sm:flex" href="#"><span class="material-symbols-outlined text-base">account_circle</span><span class="hidden md:inline">Login</span></a>
+        <a href="#" style="display:inline-flex;align-items:center;gap:10px;padding:11px 20px;border-radius:40px;background:linear-gradient(135deg,#d8232a,#ff4d4f);color:#fff;font-size:14px;font-weight:600;letter-spacing:0.3px;text-decoration:none;transition:all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px) scale(1.06)';" onmouseout="this.style.transform='translateY(0) scale(1)';">
+          <span class="material-symbols-outlined" style="font-size:18px;">home</span>
+          <span>Post Property</span>
+        </a>
+        <button id="menuToggleBtn" class="xl:hidden flex items-center justify-center w-9 h-9 rounded-full bg-surface-container-highest flex-shrink-0"><span class="material-symbols-outlined text-xl">menu</span></button>
+      </div>
+    </div>
+  </nav>
+
+ <!-- Mobile Overlay & Drawer -->
+  <div id="mobileOverlay" class="mobile-nav-overlay"></div>
+  <div id="mobileDrawer" class="mobile-drawer">
+    <div class="flex justify-between items-center mb-8"><img src="https://www.thanjaiproperty.com/images/1637904557ThanjaiProperty-Web-Logo.png" alt="logo" class="h-7"><button id="closeDrawerBtn" class="p-2 rounded-full bg-surface-container-high"><span class="material-symbols-outlined">close</span></button></div>
+    <div class="mb-4 flex items-center gap-2 px-3 py-2 bg-surface-container-high rounded-full text-sm font-medium w-fit"><span class="material-symbols-outlined text-sm text-primary">location_on</span><span>Thanjavur</span><span class="material-symbols-outlined text-sm">expand_more</span></div>
+    <div class="flex flex-col gap-0">
+      <a class="drawer-link" href="#"><span class="material-symbols-outlined text-primary text-base">home</span> Buy Property</a>
+      <a class="drawer-link" href="#"><span class="material-symbols-outlined text-primary text-base">edit_note</span> Post Your Needs</a>
+      <a class="drawer-link" href="#"><span class="material-symbols-outlined text-primary text-base">groups</span> Agents Directory</a>
+      <a class="drawer-link" href="#"><span class="material-symbols-outlined text-primary text-base">apartment</span> Builder Directory</a>
+      <a class="drawer-link" href="#"><span class="material-symbols-outlined text-primary text-base">mail</span> Contact Us</a>
+      <div class="mt-8 pt-5 border-t border-outline-variant/40 flex flex-col gap-3">
+        <a href="#" class="btn-premium text-sm justify-center"><span class="material-symbols-outlined text-sm">account_circle</span> Login / Register</a>
+        <a href="#" class="btn-login-elegant justify-center"><span class="material-symbols-outlined text-base">home</span> Add Property</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+<br>
+<br>
+<br>
+
+<section class="hero-section">
+  <div class="container">
+<p class="hero-subtitle max-w-3xl mx-auto md:mb-12">
+    Discover premium residences and culturally rich homes,curated for refined lifestyles in <span class="tamil-highlight">Tamil Nadu</span>
+</p>
+   
+
+    <div class="search-panel">
+
+      <!-- Location -->
+      <div class="filter-node" id="node-loc">
+        <div class="node-trigger" onclick="togglePanel('panel-loc')">
+          <span class="material-symbols-outlined glyph">location_on</span>
+          <div class="meta-label">
+            <small>Location</small>
+            <b id="sel-city">Select City</b>
+          </div>
+        </div>
+        <div id="panel-loc" class="overlay-panel">
+          <p class="panel-title">Choose a city</p>
+          <input type="text" class="field-input" placeholder="Search city..." oninput="filterList(this,'city-list')" onclick="event.stopPropagation()">
+          <div class="scroll-list" id="city-list">
+            <div class="item-row" onclick="pick('sel-city',this,'panel-loc')">Chennai</div>
+            <div class="item-row" onclick="pick('sel-city',this,'panel-loc')">Coimbatore</div>
+            <div class="item-row" onclick="pick('sel-city',this,'panel-loc')">Madurai</div>
+            <div class="item-row" onclick="pick('sel-city',this,'panel-loc')">Tiruchirappalli</div>
+            <div class="item-row" onclick="pick('sel-city',this,'panel-loc')">Salem</div>
+            <div class="item-row" onclick="pick('sel-city',this,'panel-loc')">Erode</div>
+            <div class="item-row" onclick="pick('sel-city',this,'panel-loc')">Vellore</div>
+            <div class="item-row" onclick="pick('sel-city',this,'panel-loc')">Thanjavur</div>
+            <div class="item-row" onclick="pick('sel-city',this,'panel-loc')">Tirunelveli</div>
+            <div class="item-row" onclick="pick('sel-city',this,'panel-loc')">Hosur</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property Type -->
+      <div class="filter-node" id="node-prop">
+        <div class="node-trigger" onclick="togglePanel('panel-prop')">
+          <span class="material-symbols-outlined glyph">home</span>
+          <div class="meta-label">
+            <small>Property Type</small>
+            <b id="sel-prop">Flat / Villa</b>
+          </div>
+        </div>
+        <div id="panel-prop" class="overlay-panel">
+          <p class="panel-title">Select type</p>
+          <div class="item-row" onclick="pick('sel-prop',this,'panel-prop')">Apartment</div>
+          <div class="item-row" onclick="pick('sel-prop',this,'panel-prop')">Independent House</div>
+          <div class="item-row" onclick="pick('sel-prop',this,'panel-prop')">Villa</div>
+          <div class="item-row" onclick="pick('sel-prop',this,'panel-prop')">Plot / Land</div>
+          <div class="item-row" onclick="pick('sel-prop',this,'panel-prop')">Commercial Space</div>
+        </div>
+      </div>
+
+      <!-- Budget -->
+      <div class="filter-node" id="node-budget">
+        <div class="node-trigger" onclick="togglePanel('panel-budget')">
+          <span class="material-symbols-outlined glyph">payments</span>
+          <div class="meta-label">
+            <small>Budget</small>
+            <b id="sel-budget">₹ Min – Max</b>
+          </div>
+        </div>
+        <div id="panel-budget" class="overlay-panel" style="min-width:300px">
+          <p class="panel-title">Set your budget</p>
+          <div class="budget-grid">
+            <div class="budget-col">
+              <div class="col-label">Minimum</div>
+              <div class="scroll-list">
+                <div class="item-row" onclick="setBudget('min','5L')">₹ 5 Lakh</div>
+                <div class="item-row" onclick="setBudget('min','10L')">₹ 10 Lakh</div>
+                <div class="item-row" onclick="setBudget('min','20L')">₹ 20 Lakh</div>
+                <div class="item-row" onclick="setBudget('min','50L')">₹ 50 Lakh</div>
+                <div class="item-row" onclick="setBudget('min','1Cr')">₹ 1 Cr</div>
+                <div class="item-row" onclick="setBudget('min','2Cr')">₹ 2 Cr</div>
+              </div>
+            </div>
+            <div class="budget-col">
+              <div class="col-label">Maximum</div>
+              <div class="scroll-list">
+                <div class="item-row" onclick="setBudget('max','20L')">₹ 20 Lakh</div>
+                <div class="item-row" onclick="setBudget('max','50L')">₹ 50 Lakh</div>
+                <div class="item-row" onclick="setBudget('max','1Cr')">₹ 1 Cr</div>
+                <div class="item-row" onclick="setBudget('max','2Cr')">₹ 2 Cr</div>
+                <div class="item-row" onclick="setBudget('max','5Cr')">₹ 5 Cr</div>
+                <div class="item-row" onclick="setBudget('max','10Cr+')">₹ 10 Cr+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Button -->
+      <button class="action-trigger">
+        <span class="material-symbols-outlined" style="font-size:20px">search</span>
+        Search
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<script>
+let budget={min:'Min',max:'Max'};
+
+function togglePanel(id){
+  const panels=document.querySelectorAll('.overlay-panel');
+  const target=document.getElementById(id);
+  const wasOpen=target.classList.contains('open');
+  panels.forEach(p=>p.classList.remove('open'));
+  if(!wasOpen) target.classList.add('open');
+}
+
+function pick(elId,el,panelId){
+  document.getElementById(elId).textContent=el.textContent.trim();
+  document.getElementById(panelId).classList.remove('open');
+  event.stopPropagation();
+}
+
+function setBudget(type,val){
+  budget[type]=val;
+  document.getElementById('sel-budget').textContent='₹ '+budget.min+' – '+budget.max;
+  event.stopPropagation();
+}
+
+function filterList(input,listId){
+  const q=input.value.toLowerCase();
+  document.querySelectorAll('#'+listId+' .item-row').forEach(r=>{
+    r.style.display=r.textContent.toLowerCase().includes(q)?'':'none';
+  });
+}
+
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.filter-node'))
+    document.querySelectorAll('.overlay-panel').forEach(p=>p.classList.remove('open'));
+});
+
+document.querySelectorAll('.category-tabs a').forEach(a=>{
+  a.addEventListener('click',function(e){
+    e.preventDefault();
+    document.querySelectorAll('.category-tabs a').forEach(x=>x.classList.remove('is-selected'));
+    this.classList.add('is-selected');
+  });
+});
+</script>
+
+
+    <!-- ========== LATEST PROPERTIES ========== -->
+    <section class="section-pad bg-surface max-w-screen-2xl mx-auto" style="padding-top: 0; padding-bottom: 20px;">
+      <div class="section-header"><h1><span class="material-symbols-outlined" style="color:#b42628"></span> Features Properties </h1><p> Freshly listed premium estates & plots</p></div>
+      <div class="latest-properties-grid" id="latestPropertiesGrid"></div>
+     <div class="listing-view-all">
+  <a href="#" class="listing-btn">
+    View All Listings
+    <span class="material-symbols-outlined">arrow_forward</span>
+  </a>
+</div>
+    </section>
+
+    <!-- ========== EXCLUSIVE OWNER PROPERTIES ========== -->
+    <section class="section-pad bg-surface-container-low max-w-screen-2xl mx-auto" style="padding-top: 10px; padding-bottom: 10px;">
+    <div class="section-header">
+  
+  <div class="header-left">
+    <h1>
+      <span class="material-symbols-outlined" style="color:#b42628"></span>
+      Exclusive Owner Properties
+    </h1>
+    <p>Premium listings directly from verified owners</p>
+  </div>
+
+  <div class="header-right">
+    <div class="swiper-btn-prev-custom" id="exclusivePrev">
+      <span class="material-symbols-outlined">chevron_left</span>
+    </div>
+    <div class="swiper-btn-next-custom" id="exclusiveNext">
+      <span class="material-symbols-outlined">chevron_right</span>
+    </div>
+  </div>
+
+</div>
+
+      <div class="property-swiper-container">
+        <div class="swiper property-swiper" id="exclusiveSwiper"><div class="swiper-wrapper" id="exclusiveSwiperWrapper"></div></div>
+        <div class="swiper-nav-custom">
+          
+        
+      
+      </div>
+      </div>
+    </section>
+
+   <!-- ========== BLOG SECTION ========== -->
+    <section class="section-pad bg-surface max-w-screen-2xl mx-auto" style="padding-bottom: 10px; padding-top: 10px;">
+     
+
+      <div class="section-header">
+  
+  <div class="header-left">
+    <h1>
+      <span class="material-symbols-outlined" style="color:#b42628"></span>
+     Latest from Our Blogs
+    </h1>
+    <p>Insights, architectural stories & market trends</p>
+  </div>
+
+  <div class="header-right">
+    <div class="swiper-btn-prev-custom" id="blogPrev">
+      <span class="material-symbols-outlined">chevron_left</span>
+    </div>
+    <div class="swiper-btn-next-custom" id="blogNext">
+      <span class="material-symbols-outlined">chevron_right</span>
+    </div>
+  </div>
+
+</div>
+      <div class="property-swiper-container">
+        <div class="swiper blog-swiper" id="blogSwiper"><div class="swiper-wrapper" id="blogSwiperWrapper"></div></div>
+    
+      </div>
+    <div class="view-all-container">
+  <a href="#" class="view-all-link">
+    Read all articles
+    <span class="material-symbols-outlined">arrow_forward</span>
+  </a>
+</div>
+      <br>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+<section class="section-pad bg-surface-container-low"
+  style="
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/008/572/449/small/real-estate-agent-holding-house-key-to-his-client-after-signing-contract-concept-for-real-estate-moving-home-or-renting-property-free-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #252c3ecd; /* pure black */
+    background-blend-mode: darken;
+  ">
+      <div class="max-w-screen-2xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-10 xl:gap-16 items-start">
+          <div class="lg:w-2/5">
+            <span class="text-primary font-bold text-xs uppercase tracking-[0.3em]" style="color: #ff0800;">Answers & Insights</span>
+            <h2 class="font-headline text-3xl sm:text-4xl lg:text-5xl font-bold mt-3 mb-5 leading-tight"
+    style="color: #ffffff;">
+    Curated Clarity.<br>Frequently Asked
+</h2>
+            <p class="text-on-surface-variant text-base leading-relaxed mb-8 max-w-md" style="color: #ffffff;">Everything you need to know about acquiring, managing, or selling heritage and premium estates in South India's most culturally rich corridors.</p>
+            <div class="flex gap-3 items-center p-4 bg-white rounded-2xl shadow-sm border border-outline-variant/30 max-w-xs"><div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0"><i class="fas fa-headset"></i></div><div><p class="text-sm font-semibold">Need personalized guidance?</p><p class="text-xs text-primary mt-0.5">concierge@thanjaicurator.com</p></div></div>
+          </div>
+          <div class="lg:w-3/5 w-full faq-grid-container">
+            <div id="faqList" class="max-h-[500px] overflow-y-auto pr-4">
+              <div class="faq-item"><div class="faq-question"><span>What types of properties does Thanjai Curator specialize in?</span><span class="material-symbols-outlined faq-icon">expand_more</span></div><div class="faq-answer">We focus on premium residential estates, heritage villas, luxury farmhouses, and curated plotted developments in Thanjavur, Chennai, Coimbatore, and Madurai.</div></div>
+              <div class="faq-item"><div class="faq-question"><span>Do you offer assistance for NRI buyers?</span><span class="material-symbols-outlined faq-icon">expand_more</span></div><div class="faq-answer">Absolutely. Our dedicated NRI desk handles legal documentation, virtual tours, and end-to-end transaction management for overseas investors.</div></div>
+              <div class="faq-item"><div class="faq-question"><span>How do you verify exclusive owner properties?</span><span class="material-symbols-outlined faq-icon">expand_more</span></div><div class="faq-answer">We conduct rigorous title verification, site inspections, and legal due diligence. Every listing is cross-checked with original documents.</div></div>
+              <div class="faq-item"><div class="faq-question"><span>Can I list my property for sale with your platform?</span><span class="material-symbols-outlined faq-icon">expand_more</span></div><div class="faq-answer">Yes. We provide a bespoke listing service for owners, including professional photography, curated copywriting, and targeted marketing to qualified buyers.</div></div>
+              <div class="faq-item"><div class="faq-question"><span>What makes your real estate advisory different?</span><span class="material-symbols-outlined faq-icon">expand_more</span></div><div class="faq-answer">We combine deep local heritage knowledge with contemporary investment analytics — treating each property as a legacy asset, not just a transaction.</div></div>
+              <div class="faq-item"><div class="faq-question"><span>Do you provide legal assistance for property registration?</span><span class="material-symbols-outlined faq-icon">expand_more</span></div><div class="faq-answer">Yes, our legal partners assist with sale deed drafting, EC verification, and coordinating the registration process at the Sub-Registrar office.</div></div>
+              <div class="faq-item"><div class="faq-question"><span>Are there any hidden consultancy charges?</span><span class="material-symbols-outlined faq-icon">expand_more</span></div><div class="faq-answer">Transparency is our core value. All service fees are discussed upfront before the engagement begins; there are no hidden costs in our transactions.</div></div>
+              <div class="faq-item"><div class="faq-question"><span>Do you handle property management for vacant lands?</span><span class="material-symbols-outlined faq-icon">expand_more</span></div><div class="faq-answer">For our exclusive clients, we offer plot maintenance services including periodic inspections, fencing coordination, and tax payment management.</div></div>
+              <div class="faq-item"><div class="faq-question"><span>Can I get a virtual site visit if I am out of town?</span><span class="material-symbols-outlined faq-icon">expand_more</span></div><div class="faq-answer">Yes, we offer high-definition video walkthroughs and live guided virtual tours via Zoom or WhatsApp for all our featured properties.</div></div>
+              <div class="faq-item"><div class="faq-question"><span>What is the average timeline for closing a deal?</span><span class="material-symbols-outlined faq-icon">expand_more</span></div><div class="faq-answer">Depending on documentation and loan approvals, a standard transaction typically takes 15 to 45 days from the initial token advance.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPLORE LOCALITIES ========== -->
+      <div class="explore-localities-wrapper">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 gap-4">
+          <div><span class="text-primary font-bold text-xs uppercase tracking-[0.3em]">Discover Neighborhoods</span><h2 class="font-headline text-2xl sm:text-3xl md:text-4xl font-bold mt-2 leading-tight">Explore Popular<br>Iconic Destinations</h2></div>
+          <div class="locality-nav-btns"><div class="loc-nav-btn swiper-btn-prev-locality"><i class="fas fa-chevron-left text-sm"></i></div><div class="loc-nav-btn swiper-btn-next-locality"><i class="fas fa-chevron-right text-sm"></i></div></div>
+        </div>
+        <div class="swiper locality-swiper overflow-hidden">
+          <div class="swiper-wrapper">
+            <a href="#">
+
+  <div class="swiper-slide"><div class="locality-card-modern"><div><img src="https://www.thanjaiproperty.com/images/1634280606thanjavur%20city-01.jpg" alt="Thanjavur"></div><div class="locality-top"><div class="locality-title">Thanjavur <a href="#"><i class="fa fa-external-link text-sm"></i></a></div><div class="price-range-text">Find the best Properties in Thanjavur. Thanjai Property Offers Free Online Properties Classifieds Ads in Thanjavur, Tamilnadu.</div><div class="stats-row">
+              
+            
+            </div></div>
+            
+            </div></div>
+            <div class="swiper-slide"><div class="locality-card-modern"><div><img src="https://www.thanjaiproperty.com/images/1634280711Chennai-01.jpg" alt="Chennai"></div><div class="locality-top"><div class="locality-title">Anna Nagar <a href="#"><i class="fa fa-external-link text-sm"></i></a></div><div class="price-range-text">Find the best Properties in Chennai. Thanjai Property Offers Free Online Properties Classifieds Ads in Chennai, Tamilnadu.</div><div class="stats-row">
+            
+            </div></div>
+           </div></div>
+            <div class="swiper-slide"><div class="locality-card-modern"><div><img src="https://www.thanjaiproperty.com/images/1634280763Coimbatore-01.jpg" alt="Coimbatore"></div><div class="locality-top"><div class="locality-title">Coimbatore <a href="#"><i class="fa fa-external-link text-sm"></i></a></div><div class="price-range-text">Find the best Properties in Coimbatore. Thanjai Property Offers Free Online Properties Classifieds Ads in Coimbatore, Tamilnadu.</div><div class="stats-row">
+            
+            </div></div>
+          </div></div>
+            <div class="swiper-slide"><div class="locality-card-modern"><div><img src="https://www.thanjaiproperty.com/images/1634280606thanjavur%20city-01.jpg" alt="Madurai"></div><div class="locality-top"><div class="locality-title">Madurai <a href="#"><i class="fa fa-external-link text-sm"></i></a></div><div class="price-range-text">Find the best Properties in Madurai. Thanjai Property Offers Free Online Properties Classifieds Ads in Madurai, Tamilnadu.</div><div class="stats-row">
+            </div></div>
+          </div></div>
+            </a>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== POST PROPERTY BANNER ========== -->
+<div class="post-banner">
+  <div class="post-banner-content">
+    <h2>
+      Post your Property for 
+      <span class="free-text">free</span>
+    </h2>
+    <p>List it on Thanjai Property and get genuine leads</p>
+  </div>
+
+  <div class="post-banner-action">
+    <a href="#" class="post-btn">
+      Post Property 
+      <span class="badge">FREE</span>
+    </a>
+  </div>
+</div>
+  <!-- ========== FOOTER LINKS SECTION (WHITE) ========== -->
+  <div class="footer-links-section" style="padding: 50px;">
+    <div class="inner">
+
+      <!-- Real Estate -->
+      <div class="section-block">
+        <div class="section-title">Real Estate</div>
+        <ul class="footer-links-list">
+          <li><a href="#">Thanjavur Real Estate</a><span class="sep">/</span></li><li><a href="#">Ariyalur Real Estate</a><span class="sep">/</span></li><li><a href="#">Chennai Real Estate</a><span class="sep">/</span></li><li><a href="#">Coimbatore Real Estate</a><span class="sep">/</span></li><li><a href="#">Cuddalore Real Estate</a><span class="sep">/</span></li><li><a href="#">Dharmapuri Real Estate</a><span class="sep">/</span></li><li><a href="#">Dindigul Real Estate</a><span class="sep">/</span></li><li><a href="#">Erode Real Estate</a><span class="sep">/</span></li><li><a href="#">Kancheepuram Real Estate</a><span class="sep">/</span></li><li><a href="#">Kanyakumari Real Estate</a><span class="sep">/</span></li><li><a href="#">Karur Real Estate</a><span class="sep">/</span></li><li><a href="#">Krishnagiri Real Estate</a><span class="sep">/</span></li><li><a href="#">Madurai Real Estate</a><span class="sep">/</span></li><li><a href="#">Nagapattinam Real Estate</a><span class="sep">/</span></li><li><a href="#">Namakal Real Estate</a><span class="sep">/</span></li><li><a href="#">Perambalur Real Estate</a><span class="sep">/</span></li><li><a href="#">Pudukkottai Real Estate</a><span class="sep">/</span></li><li><a href="#">Ramanathapuram Real Estate</a><span class="sep">/</span></li><li><a href="#">Salem Real Estate</a><span class="sep">/</span></li><li><a href="#">Nilgiris Real Estate</a><span class="sep">/</span></li><li><a href="#">Theni Real Estate</a><span class="sep">/</span></li><li><a href="#">Tirunelveli Real Estate</a><span class="sep">/</span></li><li><a href="#">Tirupur Real Estate</a><span class="sep">/</span></li><li><a href="#">Tiruvallur Real Estate</a><span class="sep">/</span></li><li><a href="#">Tiruvannamalai Real Estate</a><span class="sep">/</span></li><li><a href="#">Tiruvarur Real Estate</a><span class="sep">/</span></li><li><a href="#">Trichy Real Estate</a><span class="sep">/</span></li><li><a href="#">Tuticorin Real Estate</a><span class="sep">/</span></li><li><a href="#">Vellore Real Estate</a><span class="sep">/</span></li><li><a href="#">Villupuram Real Estate</a><span class="sep">/</span></li><li><a href="#">Virudhunagar Real Estate</a><span class="sep">/</span></li><li><a href="#">Sivagangai Real Estate</a></li>
+        </ul>
+      </div>
+
+      <!-- Buy Property -->
+      <div class="section-block">
+        <div class="section-title">Buy Property</div>
+        <ul class="footer-links-list">
+          <li><a href="#">Buy Property in Thanjavur</a><span class="sep">/</span></li><li><a href="#">Buy Property in Ariyalur</a><span class="sep">/</span></li><li><a href="#">Buy Property in Chennai</a><span class="sep">/</span></li><li><a href="#">Buy Property in Coimbatore</a><span class="sep">/</span></li><li><a href="#">Buy Property in Cuddalore</a><span class="sep">/</span></li><li><a href="#">Buy Property in Dharmapuri</a><span class="sep">/</span></li><li><a href="#">Buy Property in Dindigul</a><span class="sep">/</span></li><li><a href="#">Buy Property in Erode</a><span class="sep">/</span></li><li><a href="#">Buy Property in Kancheepuram</a><span class="sep">/</span></li><li><a href="#">Buy Property in Kanyakumari</a><span class="sep">/</span></li><li><a href="#">Buy Property in Karur</a><span class="sep">/</span></li><li><a href="#">Buy Property in Krishnagiri</a><span class="sep">/</span></li><li><a href="#">Buy Property in Madurai</a><span class="sep">/</span></li><li><a href="#">Buy Property in Nagapattinam</a><span class="sep">/</span></li><li><a href="#">Buy Property in Namakal</a><span class="sep">/</span></li><li><a href="#">Buy Property in Perambalur</a><span class="sep">/</span></li><li><a href="#">Buy Property in Pudukkottai</a><span class="sep">/</span></li><li><a href="#">Buy Property in Ramanathapuram</a><span class="sep">/</span></li><li><a href="#">Buy Property in Salem</a><span class="sep">/</span></li><li><a href="#">Buy Property in Nilgiris</a><span class="sep">/</span></li><li><a href="#">Buy Property in Theni</a><span class="sep">/</span></li><li><a href="#">Buy Property in Tirunelveli</a><span class="sep">/</span></li><li><a href="#">Buy Property in Tirupur</a><span class="sep">/</span></li><li><a href="#">Buy Property in Tiruvallur</a><span class="sep">/</span></li><li><a href="#">Buy Property in Tiruvannamalai</a><span class="sep">/</span></li><li><a href="#">Buy Property in Tiruvarur</a><span class="sep">/</span></li><li><a href="#">Buy Property in Trichy</a><span class="sep">/</span></li><li><a href="#">Buy Property in Tuticorin</a><span class="sep">/</span></li><li><a href="#">Buy Property in Vellore</a><span class="sep">/</span></li><li><a href="#">Buy Property in Villupuram</a><span class="sep">/</span></li><li><a href="#">Buy Property in Virudhunagar</a><span class="sep">/</span></li><li><a href="#">Buy Property in Sivagangai</a></li>
+        </ul>
+      </div>
+
+      <!-- Rent Property -->
+      <div class="section-block">
+        <div class="section-title">Properties For Rent</div>
+        <ul class="footer-links-list">
+          <li><a href="#">Rent Property in Thanjavur</a><span class="sep">/</span></li><li><a href="#">Rent Property in Ariyalur</a><span class="sep">/</span></li><li><a href="#">Rent Property in Chennai</a><span class="sep">/</span></li><li><a href="#">Rent Property in Coimbatore</a><span class="sep">/</span></li><li><a href="#">Rent Property in Cuddalore</a><span class="sep">/</span></li><li><a href="#">Rent Property in Dharmapuri</a><span class="sep">/</span></li><li><a href="#">Rent Property in Dindigul</a><span class="sep">/</span></li><li><a href="#">Rent Property in Erode</a><span class="sep">/</span></li><li><a href="#">Rent Property in Kancheepuram</a><span class="sep">/</span></li><li><a href="#">Rent Property in Kanyakumari</a><span class="sep">/</span></li><li><a href="#">Rent Property in Karur</a><span class="sep">/</span></li><li><a href="#">Rent Property in Krishnagiri</a><span class="sep">/</span></li><li><a href="#">Rent Property in Madurai</a><span class="sep">/</span></li><li><a href="#">Rent Property in Nagapattinam</a><span class="sep">/</span></li><li><a href="#">Rent Property in Namakal</a><span class="sep">/</span></li><li><a href="#">Rent Property in Perambalur</a><span class="sep">/</span></li><li><a href="#">Rent Property in Pudukkottai</a><span class="sep">/</span></li><li><a href="#">Rent Property in Ramanathapuram</a><span class="sep">/</span></li><li><a href="#">Rent Property in Salem</a><span class="sep">/</span></li><li><a href="#">Rent Property in Nilgiris</a><span class="sep">/</span></li><li><a href="#">Rent Property in Theni</a><span class="sep">/</span></li><li><a href="#">Rent Property in Tirunelveli</a><span class="sep">/</span></li><li><a href="#">Rent Property in Tirupur</a><span class="sep">/</span></li><li><a href="#">Rent Property in Tiruvallur</a><span class="sep">/</span></li><li><a href="#">Rent Property in Tiruvannamalai</a><span class="sep">/</span></li><li><a href="#">Rent Property in Tiruvarur</a><span class="sep">/</span></li><li><a href="#">Rent Property in Trichy</a><span class="sep">/</span></li><li><a href="#">Rent Property in Tuticorin</a><span class="sep">/</span></li><li><a href="#">Rent Property in Vellore</a><span class="sep">/</span></li><li><a href="#">Rent Property in Villupuram</a><span class="sep">/</span></li><li><a href="#">Rent Property in Virudhunagar</a><span class="sep">/</span></li><li><a href="#">Rent Property in Sivagangai</a></li>
+        </ul>
+      </div>
+
+      <!-- Residential Projects -->
+      <div class="section-block">
+        <div class="section-title">Residential Projects</div>
+        <ul class="footer-links-list">
+          <li><a href="#">Residential Projects in Thanjavur</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Ariyalur</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Chennai</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Coimbatore</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Cuddalore</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Dharmapuri</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Dindigul</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Erode</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Kancheepuram</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Kanyakumari</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Karur</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Krishnagiri</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Madurai</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Nagapattinam</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Namakal</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Perambalur</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Pudukkottai</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Ramanathapuram</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Salem</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Nilgiris</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Theni</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Tirunelveli</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Tirupur</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Tiruvallur</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Tiruvannamalai</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Tiruvarur</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Trichy</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Tuticorin</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Vellore</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Villupuram</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Virudhunagar</a><span class="sep">/</span></li><li><a href="#">Residential Projects in Sivagangai</a></li>
+        </ul>
+      </div>
+
+      <!-- Popular Properties Description -->
+      <div>
+        <div class="footer-desc">Popular Properties in Tamil Nadu</div>
+        <p class="footer-desc-text">Thanjaiproperty.com is India's premium real estate portal where users can find Independent Houses / Villas, Apartments/Flats and Plots for sale and rent in 400+ cities across India. Thanjai property helps the property seeker to find Resale properties, Residential Projects and Owner properties in Thanjavur, Chennai, Madurai, Trichy and other cities. Thanjai property provides complete details of Project launches, under construction projects and ready-to-move projects with detailed description of locality, builder, price trends and features.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========== DARK FOOTER ========== -->
+  <footer class="dark-footer" style="padding: 50px;">
+    <div class="dark-footer-grid">
+      <div class="dark-footer-col">
+        <h3>About</h3>
+        <p>Thanjai property Real Estate Land Promoters and Constructions in Thanjavur to buy sale and house land plot commercial industrial apartment</p>
+        <p style="margin-top: 12px;"><span class="yellow-bold">00326611</span> <span style="color:#6e82a5">Visitors Count</span></p>
+      </div>
+      <div class="dark-footer-col">
+        <h3>Contact Us</h3>
+        <p style="color: #F8E81C;; font-weight: bold;">THANJAI PROPERTY</p>
+        <p style="margin-top: 8px;">Flat No B1, 2nd Floor, Sivasakthi Apartment,<br>Raja Nagar, Behind HDFC Bank, Near New Bus Stand,<br>Thanjavur - 613005</p>
+      </div>
+      <div class="dark-footer-col">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="dark-footer-col">
+        <h3>Social Media Links</h3>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f" style="width:20px;"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter" style="width:20px;"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-google-plus-g" style="width:20px;"></i> Google Plus</a></li>
+          <li><a href="#"><i class="fab fa-youtube" style="width:20px;"></i> Youtube</a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in" style="width:20px;"></i> Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== COPYRIGHT BAR ========== -->
+  <div class="copyright-bar" style="padding-left: 50px;">
+    <div class="bar-container">
+      <div class="bottom-nav">
+        <a href="#">Home</a>
+        <a href="#">Post Property</a>
+        <a href="#">Search Property</a>
+        <a href="#">Latest Blog</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div>All Rights Reserved. &copy; Copyright 2026 <span style="color:#fff">ThanjaiProperty.com</span></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // ===== DISTRICTS =====
+    const tamilNaduDistricts = ["Ariyalur","Chengalpattu","Chennai","Coimbatore","Cuddalore","Dharmapuri","Dindigul","Erode","Kallakurichi","Kancheepuram","Kanyakumari","Karur","Krishnagiri","Madurai","Mayiladuthurai","Nagapattinam","Namakkal","Nilgiris","Perambalur","Pudukkottai","Ramanathapuram","Ranipet","Salem","Sivagangai","Tenkasi","Thanjavur","Theni","Thoothukudi","Tiruchirappalli","Tirunelveli","Tirupathur","Tiruppur","Tiruvallur","Tiruvannamalai","Tiruvarur","Vellore","Viluppuram","Virudhunagar"];
+    function renderDistricts(list) { document.getElementById('districtGrid').innerHTML = list.map(d => `<div class="district-item" onclick="selectDistrict('${d}')">${d}</div>`).join(''); }
+    function filterDistricts(query) { renderDistricts(tamilNaduDistricts.filter(d => d.toLowerCase().includes(query.toLowerCase()))); }
+    function selectDistrict(name) { document.getElementById('selectedCity').textContent = name; }
+    renderDistricts(tamilNaduDistricts);
+
+    // ===== HERO SLIDER =====
+    new Swiper('.hero-slider-container', { loop: true, effect: 'fade', fadeEffect: { crossFade: true }, grabCursor: true, speed: 1000, autoplay: { delay: 5000, disableOnInteraction: false }, slidesPerView: 1, spaceBetween: 0, navigation: { nextEl: '.hero-slider-next', prevEl: '.hero-slider-prev' }, pagination: { el: '.hero-slider-pagination', clickable: true, dynamicBullets: true } });
+
+    // ===== PROPERTY DATA =====
+    const propertiesData = [
+      { id: "PP16625", price: "9 Lac(s)", title: "Residential Plot / Land for Sale in Keelavasal, Thanjavur", location: "Keelavasal, Thanjavur", img: "assert/1.jpg" },
+      { id: "PP16624", price: "85 Lac(s)", title: "Residential House / Villa for Sale in Medical college, Thanjavur", location: "Medical college, Thanjavur", img: "assert/2.jpg" },
+      { id: "PP16623", price: "84 Lac(s)", title: "Residential Plot / Land for Sale in NEW BUS STAND, THANJAVUR", location: "New Bus Stand, Thanjavur", img: "assert/3.jpg" },
+      { id: "PP16622", price: "90 Lac(s)", title: "Residential House / Villa for Sale in PILLAIYARPATTI ROAD", location: "Pillaiyarpatty Road, Thanjavur", img: "assert/4.jpg" }
+    ];
+    const blogData = [
+      { id: 1, title: "The Resurgence of Chettinad Architecture in Modern Villas", excerpt: "How heritage design elements are shaping contemporary luxury homes across Tamil Nadu.", date: "May 15, 2025", readTime: "6 min read", img: "assert/blog1.jpg" },
+      { id: 2, title: "Thanjavur: Emerging as a Cultural Real Estate Hotspot", excerpt: "Why investors are turning to the temple city for premium residential plots.", date: "April 28, 2025", readTime: "4 min read", img: "assert/blog2.jpg" },
+      { id: 3, title: "Smart Home Innovations for Luxury Estates", excerpt: "Integrating cutting-edge automation while preserving architectural elegance.", date: "April 10, 2025", readTime: "5 min read", img: "assert/blog3.jpg" },
+      { id: 4, title: "Guide to Buying Farmhouses near Thanjavur", excerpt: "Legal aspects, land appreciation, and curated selections for countryside estates.", date: "March 22, 2025", readTime: "7 min read", img: "assert/blog4.jpg" }
+    ];
+
+    function buildPropertyCard(prop, isSwiper=false) {
+      return `<div class="${isSwiper ? 'property-card-swiper' : 'property-card'}"><div class="property-img-wrapper"><img loading="lazy" src="${prop.img}" alt="${prop.title}" onerror="this.src='https://placehold.co/600x400/EEE/CCCCCC?text=Thanjai+Estate'"><span class="property-id">ID: ${prop.id}</span><div class="property-price">₹ ${prop.price}</div></div><div class="property-desc"><p><span class="material-symbols-outlined">home</span>${prop.title.length > 65 ? prop.title.substring(0,65) + '...' : prop.title}</p><div class="property-location"><span class="material-symbols-outlined">location_on</span>${prop.location}</div></div></div>`;
+    }
+
+    // Latest Properties Grid
+    const gridContainer = document.getElementById('latestPropertiesGrid');
+    if (gridContainer) propertiesData.forEach(prop => { const div = document.createElement('div'); div.innerHTML = buildPropertyCard(prop, false); gridContainer.appendChild(div); });
+
+    // Exclusive Swiper
+    const exclusiveWrapper = document.getElementById('exclusiveSwiperWrapper');
+    if (exclusiveWrapper) propertiesData.forEach(prop => { const slide = document.createElement('div'); slide.className = 'swiper-slide'; slide.innerHTML = buildPropertyCard(prop, true); exclusiveWrapper.appendChild(slide); });
+
+    // Blog Swiper
+    const blogSwiperWrapper = document.getElementById('blogSwiperWrapper');
+    if (blogSwiperWrapper) blogData.forEach(blog => { const slide = document.createElement('div'); slide.className = 'swiper-slide'; slide.innerHTML = `<div class="blog-card"><div class="blog-img-wrapper"><img loading="lazy" src="${blog.img}" alt="${blog.title}" onerror="this.src='https://placehold.co/600x400/EEE/CCCCCC?text=Blog'"><div class="blog-date">📅 ${blog.date}</div></div><div class="blog-content"><div class="blog-title">${blog.title}</div><div class="blog-excerpt">${blog.excerpt}</div><div class="blog-meta"><span><span class="material-symbols-outlined">schedule</span> ${blog.readTime}</span></div></div></div>`; blogSwiperWrapper.appendChild(slide); });
+
+    // Swipers Init
+    new Swiper('#exclusiveSwiper', { slidesPerView: 1, spaceBetween: 20, loop: true, autoplay: { delay: 4500, disableOnInteraction: false }, navigation: { nextEl: '#exclusiveNext', prevEl: '#exclusivePrev' }, breakpoints: { 480: { slidesPerView: 1 }, 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 }, 1280: { slidesPerView: 4 } } });
+    new Swiper('#blogSwiper', { slidesPerView: 1, spaceBetween: 20, loop: true, autoplay: { delay: 5000, disableOnInteraction: false }, navigation: { nextEl: '#blogNext', prevEl: '#blogPrev' }, breakpoints: { 480: { slidesPerView: 1 }, 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 }, 1280: { slidesPerView: 4 } } });
+    new Swiper('.locality-swiper', { slidesPerView: 1, spaceBetween: 24, loop: true, autoplay: { delay: 4000, disableOnInteraction: false }, navigation: { nextEl: '.swiper-btn-next-locality', prevEl: '.swiper-btn-prev-locality' }, breakpoints: { 480: { slidesPerView: 1 }, 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 }, 1280: { slidesPerView: 4 } } });
+
+    // ===== MOBILE DRAWER =====
+    const menuBtn = document.getElementById('menuToggleBtn'), closeBtn = document.getElementById('closeDrawerBtn'), overlay = document.getElementById('mobileOverlay'), drawer = document.getElementById('mobileDrawer');
+    menuBtn?.addEventListener('click', () => { overlay.classList.add('open'); drawer.classList.add('open'); document.body.classList.add('drawer-open'); });
+    closeBtn?.addEventListener('click', () => { overlay.classList.remove('open'); drawer.classList.remove('open'); document.body.classList.remove('drawer-open'); });
+    overlay?.addEventListener('click', () => { overlay.classList.remove('open'); drawer.classList.remove('open'); document.body.classList.remove('drawer-open'); });
+
+    // ===== FAQ =====
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => { item.querySelector('.faq-question')?.addEventListener('click', () => { const isActive = item.classList.contains('active'); faqItems.forEach(i => i.classList.remove('active')); if (!isActive) item.classList.add('active'); }); });
+    if (faqItems.length) faqItems[0].classList.add('active');
+
+    // ===== SEARCH BAR =====
+    const locCont = document.getElementById('locationContainer');
+    const locOpts = document.querySelectorAll('#locationOptions input');
+    const typeLabel = document.getElementById('typeLabel');
+    const typeOpts = document.querySelectorAll('#typeOptions input');
+    const budgetLabel = document.getElementById('budgetLabel');
+    const minBudget = document.getElementById('minBudget');
+    const maxBudget = document.getElementById('maxBudget');
+    const navLinks = document.querySelectorAll('.category-tabs a');
+    const searchWrapper = document.querySelector('.search-panel');
+
+    navLinks.forEach(link => { link.addEventListener('click', (e) => { e.preventDefault(); navLinks.forEach(l => l.classList.remove('is-selected')); link.classList.add('is-selected'); searchWrapper.style.transform = 'scale(0.99)'; setTimeout(() => { searchWrapper.style.transform = 'scale(1)'; }, 150); }); });
+    function updateLoc() { const checked = Array.from(locOpts).filter(i => i.checked); locCont.innerHTML = checked.length ? `<div class="tag-bubble">${checked[0].value}</div>` : '<b style="color:#9ca3af;">Select City</b>'; }
+    function updateType() { const checked = Array.from(typeOpts).filter(i => i.checked); typeLabel.innerText = checked.length ? checked[0].value : 'Select Type'; }
+    function updateBudget() { const min = minBudget.value; const max = maxBudget.value; if (min === "0" && max === "Any") { budgetLabel.innerText = "Any Budget"; } else if (max === "Any") { budgetLabel.innerText = min + "+"; } else if (min === "0") { budgetLabel.innerText = "Up to " + max; } else { budgetLabel.innerText = "₹" + min + " - ₹" + max; } }
+    document.querySelectorAll('.filter-node').forEach(d => { d.addEventListener('click', (e) => { if (e.target.closest('.overlay-panel') || e.target.tagName === 'SELECT') return; const wasActive = d.classList.contains('is-open'); document.querySelectorAll('.filter-node').forEach(x => x.classList.remove('is-open')); if (!wasActive) d.classList.add('is-open'); }); });
+    window.onclick = (e) => { if (!e.target.closest('.filter-node')) { document.querySelectorAll('.filter-node').forEach(x => x.classList.remove('is-open')); } };
+    locOpts.forEach(i => i.onchange = updateLoc);
+    typeOpts.forEach(i => i.onchange = updateType);
+    minBudget.onchange = updateBudget;
+    maxBudget.onchange = updateBudget;
+    updateLoc(); updateType(); updateBudget();
+
+    // ===== NAV SCROLL =====
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => { nav.style.background = window.scrollY > 50 ? 'rgba(255,240,235,0.95)' : 'rgba(255,240,235,0.8)'; });
+  
+
+    function toggleFilter(element) {
+        const isActive = element.classList.contains('is-active');
+        
+        // Close all others
+        document.querySelectorAll('.filter-node').forEach(node => {
+            node.classList.remove('is-active');
+        });
+
+        if (!isActive) {
+            element.classList.add('is-active');
+            document.body.classList.add('panel-open');
+        } else {
+            document.body.classList.remove('panel-open');
+        }
+    }
+
+    function updateText(id, value) {
+        document.getElementById(id).innerText = value;
+    }
+
+    // Close dropdowns when clicking outside
+    window.addEventListener('click', function(e) {
+        if (!document.getElementById('searchPanel').contains(e.target)) {
+            document.querySelectorAll('.filter-node').forEach(node => {
+                node.classList.remove('is-active');
+            });
+            document.body.classList.remove('panel-open');
+        }
+    });
+
+    function handleSearch() {
+        const loc = document.getElementById('val-location').innerText;
+        alert("Fetching results for: " + loc);
+    }
+
+  </script>
+
+
+
+</body>
+</html>
